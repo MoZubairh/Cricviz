@@ -13,8 +13,8 @@ def signup(request):
 def analysis(request):
     return render(request, 'Home/Analysis.html')
 
-# def livescore(request):
-#     return render(request, 'Home/Livescore.html')
+def livescore(request):
+    return render(request, 'Home/Livescore.html')
 
 # def profile(request):
 #     return render(request, 'Home/Profile.html')
