@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{%load static%}
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -7,7 +8,7 @@
       content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
     />
     <title>Cricviz_wesite</title>
-    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href='{% static "/Home/bootstrap/css/bootstrap.min.css" %}'/>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"
@@ -20,7 +21,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
     />
-    <link rel="stylesheet" href="/assets/css/styles.min.css" />
+    <link rel="stylesheet" href='{% static "/Home/css/styles.min.css" %}'/>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -32,129 +33,7 @@
   </head>
   <body>
     <!-- Start: Black Navbar -->
-    <nav
-      class="navbar navbar-light navbar-expand-md navbar-fixed-top navigation-clean-button"
-      style="
-        background: #001932;
-        border-radius: 20;
-        border-top-left-radius: 20;
-        border-top-right-radius: 20;
-        border-bottom-right-radius: 20;
-        border-bottom-left-radius: 20;
-        border-style: none;
-        padding-top: 0;
-        padding-bottom: 10px;
-      "
-    >
-      <div class="container">
-        <button
-          data-bs-toggle="collapse"
-          class="navbar-toggler text-bg-primary"
-          data-bs-target="#navcol-1"
-        >
-          <span class="visually-hidden">Toggle navigation</span
-          ><span class="navbar-toggler-icon text-secondary"></span>
-        </button>
-        <div>
-          <a
-            class="navbar-brand"
-            href="#"
-            style="font-family: Almarai, sans-serif"
-            ><span
-              data-bss-hover-animate="flash"
-              style="
-                font-family: Almarai, sans-serif;
-                font-size: 25px;
-                color: rgba(38, 105, 239, 0.9);
-                font-weight: bold;
-              "
-              >CRICVIZ</span
-            >
-          </a>
-        </div>
-        <div
-          class="collapse navbar-collapse text-center"
-          data-aos="fade"
-          data-aos-once="true"
-          id="navcol-1"
-        >
-          <ul class="navbar-nav mx-auto nav-right">
-            <li class="nav-item" style="padding-right: 20px">
-              <a
-                class="nav-link active"
-                data-bss-hover-animate="pulse"
-                href="/Home-1.html"
-                style="
-                  color: rgba(106, 106, 222, 0.9);
-                  font-family: Almarai, sans-serif;
-                  font-weight: bold;
-                "
-                >Home
-              </a>
-            </li>
-            <li class="nav-item" style="padding-right: 21px">
-              <a
-                class="nav-link active"
-                data-bss-hover-animate="pulse"
-                href="/Livescore.html"
-                style="
-                  color: rgba(106, 106, 222, 0.9);
-                  font-family: Almarai, sans-serif;
-                  font-weight: bold;
-                "
-                >Live Score</a
-              >
-            </li>
-            <li class="nav-item" style="padding-right: 20px">
-              <a
-                class="nav-link"
-                data-bss-hover-animate="pulse"
-                href="/Analysis.html"
-                style="
-                  color: rgba(106, 106, 222, 0.9);
-                  font-family: Almarai, sans-serif;
-                  font-weight: bold;
-                "
-                >Analysis</a
-              >
-            </li>
-            <li class="nav-item" style="padding-right: 20px">
-              <a
-                class="nav-link"
-                data-bss-hover-animate="pulse"
-                href="/Analysis.html"
-                style="
-                  color: rgba(106, 106, 222, 0.9);
-                  font-weight: bold;
-                  font-family: Almarai, sans-serif;
-                "
-                >Predict</a
-              >
-            </li>
-          </ul>
-          <!-- Start: Actions -->
-          <p class="navbar-text actions">
-            <a
-              class="link-info"
-              href="/profile.html"
-              style="
-                color: rgba(255, 253, 253, 0.9);
-                margin-left: 0px;
-                margin-right: 2px;
-              "
-              >Username</a
-            >
-            <img
-              class="border rounded-circle img-profile"
-              src="/assets/img/avatars/pfimg1.jpg"
-              width="63"
-              height="58"
-            />
-          </p>
-          <!-- End: Actions -->
-        </div>
-      </div>
-    </nav>
+    {% include "Home/Nav.html" %}
     <!-- End: Black Navbar -->
     <div
       style="
@@ -448,6 +327,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.js"></script>
-    <script src="/assets/js/script.min.js"></script>
+    <script src='{% static "/Home/js/script.min.js" %}'></script>
   </body>
 </html>
