@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-{% load static %}
+{%load static%}
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -8,24 +8,26 @@
       content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
     />
     <title>Login 10</title>
-    <link rel="stylesheet" href='{% static "Home/bootstrap/css/bootstrap.min.css" %}'/>
+    <link rel="stylesheet" href='{% static "/Home/bootstrap/css/bootstrap.min.css" %}'/>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href='{% static "Home/css/styles.min.css" %}'/>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.css"
+    />
+    <link rel="stylesheet" href='{% static "/Home/css/styles.min.css" %}'/>
   </head>
   <body class="img js-fullheight" style="background: rgb(255, 255, 255)">
     <!-- Start: Black Navbar -->
-      
     {% include "Home/Nav.html" %}
-
-      <!-- End: Black Navbar -->
+    <!-- End: Black Navbar -->
     <div
       class="text-start card-body p-md-5 text-black"
       id="main-div"
       style="
-        background: url('{% static "Home/img/circ1.jpg" %}') left / cover no-repeat,
+        background: url('{% static "/Home/img/circ1.jpg" %}') left / cover no-repeat,
           rgba(85, 226, 235, 0.66);
         border-width: 3px;
         border-color: rgb(8, 8, 8);
@@ -140,6 +142,9 @@
       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src='{% static "Home/js/script.min.js" %}' />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.js"></script>
+    <script src='{% static "/Home/js/script.min.js" %}'></script>
   </body>
 </html>

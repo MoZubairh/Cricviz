@@ -8,24 +8,29 @@
       content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
     />
     <title>Login 10</title>
-    <link rel="stylesheet" href='{% static "Home/bootstrap/css/bootstrap.min.css" %}' />
+    <link rel="stylesheet" href='{% static "/Home/bootstrap/css/bootstrap.min.css" %}'/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
+    />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href='{% static "Home/css/styles.min.css" %}'/>
+    <link rel="stylesheet" href='{% static "/Home/css/styles.min.css" %}' />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.css"
+    />
   </head>
   <body class="img js-fullheight" style="background: rgb(0, 0, 0)">
     <!-- Start: Black Navbar -->
-      
     {% include "Home/Nav.html" %}
-
-      <!-- End: Black Navbar -->
+    <!-- End: Black Navbar -->
     <section
       class="ftco-section"
-      style="background: url('{% static "Home/img/circ1.jpg" %}') center / cover no-repeat"
+      style="background: url('{% static "/Home/img/circ1.jpg" %}') center / cover no-repeat"
     >
-
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-6 text-center mb-5">
@@ -45,7 +50,7 @@
           <div class="col-md-6 col-lg-4">
             <div class="login-wrap p-0">
               <h3
-                class="text-center mb-4"
+                class="text-center bounce animated mb-4"
                 style="
                   color: rgb(255, 255, 255);
                   font-family: Almarai, sans-serif;
@@ -78,7 +83,11 @@
                   <button
                     class="btn btn-light form-control submit px-3"
                     type="submit"
-                    style="background: rgb(133, 218, 224)"
+                    style="
+                      background: #260f54;
+                      color: rgb(131, 189, 248);
+                      font-family: Almarai, sans-serif;
+                    "
                   >
                     Sign In
                   </button>
@@ -111,7 +120,7 @@
                   <button
                     class="btn btn-primary border-primary"
                     type="button"
-                    style="background: #85dae0; color: rgb(255, 255, 255)"
+                    style="background: #260f54; color: rgb(255, 255, 255)"
                   >
                     Google
                   </button>
@@ -123,6 +132,9 @@
       </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src='{% static "Home/js/script.min.js" %}' />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.js"></script>
+    <script src='{% static "/Home/js/script.min.js" %}' ></script>
   </body>
 </html>

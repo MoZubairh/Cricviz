@@ -9,3 +9,14 @@ def login(request):
 
 def signup(request):
     return render(request, 'Home/Signup.html')
+
+# def livescore(request):
+#     return render(request, 'Home/Livescore.html')
+
+# def profile(request):
+#     return render(request, 'Home/Profile.html')
+
+# def analysis(request):
+#     return render(request, 'Home/Analysis.html')
+
+

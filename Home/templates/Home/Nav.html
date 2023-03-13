@@ -1,115 +1,134 @@
-
 <nav
-  class="navbar navbar-light navbar-expand-md navbar-fixed-top navigation-clean-button"
-  style="
-    background: #001932;
-    border-radius: 20;
-    border-top-left-radius: 20;
-    border-top-right-radius: 20;
-    border-bottom-right-radius: 20;
-    border-bottom-left-radius: 20;
-    border-style: none;
-    padding-top: 0;
-    padding-bottom: 10px;
-  "
->
-  <div class="container">
-    <button
-      data-bs-toggle="collapse"
-      class="navbar-toggler"
-      data-bs-target="#navcol-1"
-    >
-      <span class="visually-hidden">Toggle navigation</span
-      ><span class="navbar-toggler-icon"></span>
-    </button>
-    <div>
-      <a class="navbar-brand" href="#"
-        ><span
-          data-bss-hover-animate="flash"
-          style="
-            font-family: Almarai, sans-serif;
-            font-size: 25px;
-            color: rgba(69, 111, 194, 0.9);
-            font-weight: bold;
-          "
-          >CRICVIZ</span
-        >
-      </a>
-    </div>
-    <div
-      class="collapse navbar-collapse text-center"
-      data-aos="fade"
-      data-aos-once="true"
-      id="navcol-1"
-      style="color: rgb(255, 255, 255)"
-    >
-      <ul class="navbar-nav mx-auto nav-right">
-        <li class="nav-item" style="padding-right: 20px">
-          <a
-            class="nav-link active"
-            href="{% url 'home' %}"
-            style="color: rgba(224, 217, 217, 0.9)"
-            >Home
-          </a>
-        </li>
-        <li class="nav-item" style="padding-right: 21px">
-          <a
-            class="nav-link"
-            href="about.html"
-            style="color: rgba(224, 217, 217, 0.9)"
-            >Live Score</a
+        class="navbar navbar-light navbar-expand-md navbar-fixed-top navigation-clean-button"
+        style="
+          background: #001932;
+          border-radius: 20;
+          border-top-left-radius: 20;
+          border-top-right-radius: 20;
+          border-bottom-right-radius: 20;
+          border-bottom-left-radius: 20;
+          border-style: none;
+          padding-top: 0;
+          padding-bottom: 10px;
+          height: 91px;
+        "
+      >
+        <div class="container">
+          <button
+            data-bs-toggle="collapse"
+            class="navbar-toggler text-bg-primary"
+            data-bs-target="#navcol-1"
           >
-        </li>
-        <li class="nav-item" style="padding-right: 20px">
-          <a
-            class="nav-link"
-            href="faq.html"
-            style="color: rgba(224, 217, 217, 0.9)"
-            >Analysis</a
+            <span class="visually-hidden">Toggle navigation</span
+            ><span class="navbar-toggler-icon text-secondary"></span>
+          </button>
+          <div>
+            <a class="navbar-brand" href="#"
+              ><span
+                data-bss-hover-animate="flash"
+                style="
+                  font-family: Almarai, sans-serif;
+                  font-size: 25px;
+                  color: rgba(38, 105, 239, 0.9);
+                  font-weight: bold;
+                "
+                >CRICVIZ</span
+              >
+            </a>
+          </div>
+          <div
+            class="collapse navbar-collapse text-center"
+            data-aos="fade"
+            data-aos-once="true"
+            id="navcol-1"
           >
-        </li>
-        <li class="nav-item" style="padding-right: 20px">
-          <a
-            class="nav-link"
-            href="faq.html"
-            style="color: rgba(224, 217, 217, 0.9)"
-            >Player</a
-          >
-        </li>
-        <li class="nav-item" style="padding-right: 20px">
-          <a
-            class="nav-link"
-            href="faq.html"
-            style="color: rgba(224, 217, 217, 0.9)"
-            >Match</a
-          >
-        </li>
-      </ul>
-      <!-- Start: Actions -->
-      <p class="ms-auto navbar-text actions">
-        <a
-          class="login"
-          href="{% url 'login' %}"
-          style="color: rgba(224, 217, 217, 0.9); margin-right: 20px"
-          >Log In</a
-        >
-        <a
-          class="btn btn-light action-button"
-          role="button"
-          href="{% url 'signup' %}"
-          style="
-            color: rgba(0, 0, 0, 0.9);
-            background: var(--bs-gray-200);
-            border-radius: 10px;
-            border-style: solid;
-            border-color: rgba(0, 0, 0, 0.9);
-            font-size: 16px;
-            padding: 5px 8px;
-          "
-          >Sign Up</a
-        >
-      </p>
-      <!-- End: Actions -->
-    </div>
-  </div>
-</nav>
+            <ul class="navbar-nav mx-auto nav-right">
+              <li class="nav-item" style="padding-right: 20px">
+                <a
+                  class="nav-link active"
+                  data-bss-hover-animate="pulse"
+                  href="{% url 'home' %}"
+                  style="
+                    color: rgba(106, 106, 222, 0.9);
+                    font-family: Almarai, sans-serif;
+                    font-weight: bold;
+                  "
+                  >Home
+                </a>
+              </li>
+              <li class="nav-item" style="padding-right: 21px">
+                <a
+                  class="nav-link"
+                  data-bss-hover-animate="pulse"
+                  href="/Livescore.html"
+                  style="
+                    color: rgba(106, 106, 222, 0.9);
+                    font-family: Almarai, sans-serif;
+                    font-weight: bold;
+                  "
+                  >Live Score</a
+                >
+              </li>
+              <li class="nav-item" style="padding-right: 20px">
+                <a
+                  class="nav-link"
+                  data-bss-hover-animate="pulse"
+                  href="/Analysis.html"
+                  style="
+                    color: rgba(106, 106, 222, 0.9);
+                    font-family: Almarai, sans-serif;
+                    font-weight: bold;
+                  "
+                  >Analysis</a
+                >
+              </li>
+              <li class="nav-item" style="padding-right: 20px">
+                <a
+                  class="nav-link"
+                  data-bss-hover-animate="pulse"
+                  href="/Home-1.html"
+                  style="
+                    color: rgba(106, 106, 222, 0.9);
+                    font-family: Almarai, sans-serif;
+                    font-weight: bold;
+                  "
+                  >Predict</a
+                >
+              </li>
+            </ul>
+            <!-- Start: Actions -->
+            <p class="navbar-text actions">
+              <a
+                data-bss-hover-animate="flash"
+                class="login"
+                href='{% url "login" %}'
+                style="
+                  color: rgba(106, 106, 222, 0.9);
+                  margin-right: 20px;
+                  font-family: Almarai, sans-serif;
+                  font-weight: bold;
+                "
+                >Log In</a
+              >
+              <a
+                class="btn btn-light action-button"
+                role="button"
+                href='{% url "signup" %}'
+                style="
+                  color: rgba(106, 106, 222, 0.9);
+                  background: var(--bs-gray-200);
+                  border-radius: 10px;
+                  border-style: solid;
+                  border-color: rgba(0, 0, 0, 0.9);
+                  font-size: 16px;
+                  padding: 5px 8px;
+                  font-family: Almarai, sans-serif;
+                  font-weight: bold;
+                "
+                >Sign Up</a
+              >
+            </p>
+            <!-- End: Actions -->
+          </div>
+        </div>
+      </nav>
