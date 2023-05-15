@@ -8,7 +8,10 @@
       content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
     />
     <title>Dashboards</title>
-    <link rel="stylesheet" href='{% static "/Dashboards/bootstrap/css/bootstrap.min.css" %}' />
+    <link
+      rel="stylesheet"
+      href='{% static "/Dashboards/bootstrap/css/bootstrap.min.css" %}'
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
@@ -17,7 +20,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
     />
-    <link rel="stylesheet" href='{% static "/Dashboards/css/styles.min.css" %}'  />
+    <link
+      rel="stylesheet"
+      href='{% static "/Dashboards/css/styles.min.css" %}'
+    />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -28,9 +34,9 @@
     />
   </head>
   <body style="height: 100%; width: 100%">
-     <!-- Start: Black Navbar -->
-     {% include "Home/Nav.html" %}
-     <!-- End: Black Navbar -->
+    <!-- Start: Black Navbar -->
+    {% include "Home/Nav.html" %}
+    <!-- End: Black Navbar -->
     <div
       style="
         background: linear-gradient(
@@ -58,12 +64,15 @@
           <iframe
             title="Report Section"
             width="1024"
-            height="1060"
+            height="612"
             loading="eager"
             src="https://app.powerbi.com/view?r=eyJrIjoiYzdkNjUwZDAtOGVjYy00MGExLWI0ZGUtOTA5MDgzZjgyMDdmIiwidCI6IjkzMGQ5Zjg3LTk4ZWQtNGUwZC1hMmFhLWEyZjRkM2MxMTI5YyJ9"
             frameborder="0"
             allowfullscreen="true"
           ></iframe>
+        </div>
+        <div>
+          <iframe title="stats_dashboard f" width="1024" height="612" src="https://app.powerbi.com/view?r=eyJrIjoiZjEyNWU5MzQtOTA1Ny00NDU4LTljMmQtZmM2OTlmMGU2Y2I3IiwidCI6IjkzMGQ5Zjg3LTk4ZWQtNGUwZC1hMmFhLWEyZjRkM2MxMTI5YyJ9" frameborder="0" allowFullScreen="true"></iframe>
         </div>
       </div>
     </div>
